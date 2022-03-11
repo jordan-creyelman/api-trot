@@ -23,7 +23,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_08_143905) do
   create_table "scooters", force: :cascade do |t|
     t.string "name"
     t.integer "price"
+    t.string "characteristic_one"
+    t.string "characteristic_two"
+    t.string "characteristic_three"
     t.string "description"
+    t.string "image"
+    t.string "scooter_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -37,7 +42,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_08_143905) do
     t.string "first_name"
     t.string "last_name"
     t.integer "age"
-    t.boolean "is_owner", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
