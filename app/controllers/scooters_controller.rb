@@ -36,6 +36,7 @@ class ScootersController < ApplicationController
   # DELETE /scooters/1
   def destroy
     @scooter.destroy
+    render json: "The product has been deleted"
   end
 
   private
