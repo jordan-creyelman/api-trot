@@ -24,6 +24,12 @@ Rails.application.routes.draw do
   #   sessions: 'users/sessions',
   #   registrations: 'users/registrations'
   # }
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
+  }
+  get '/member-data', to: 'members#show'
+  
   resources :scooters
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
