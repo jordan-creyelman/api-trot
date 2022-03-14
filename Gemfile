@@ -55,3 +55,5 @@ gem 'listen'
 gem 'table_print'
 
 
+
+gem "dotenv-rails", "~> 2.7"
