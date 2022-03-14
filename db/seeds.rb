@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
-Scooters.create!(
+Scooter.create!(
   name: Faker::Name.first_name,
   price: Faker::Number.between(from: 18, to: 100),
   characteristic_one: Faker::Name.first_name,
@@ -17,3 +17,5 @@ Scooters.create!(
   image: "ta race",
   scooter_url: "ta race"
 )
+
+puts "Der Samen wird erzeugt, mein General!"
