@@ -10,29 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_08_143905) do
+ActiveRecord::Schema[7.0].define(version: 2022_03_07_151552) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "jwt_denylist", force: :cascade do |t|
     t.string "jti", null: false
     t.datetime "exp", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["jti"], name: "index_jwt_denylist_on_jti"
-  end
-
-  create_table "scooters", force: :cascade do |t|
-    t.string "name"
-    t.integer "price"
-    t.string "characteristic_one"
-    t.string "characteristic_two"
-    t.string "characteristic_three"
-    t.string "description"
-    t.string "image"
-    t.string "scooter_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -44,6 +29,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_08_143905) do
     t.string "first_name"
     t.string "last_name"
     t.integer "age"
+    t.boolean "is_owner", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
