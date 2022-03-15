@@ -1,3 +1,2 @@
-class Scooter < ApplicationRecord
-    belongs_to :user
+class Scooter < ApplicationRecord    
 end
