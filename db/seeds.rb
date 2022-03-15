@@ -35,7 +35,7 @@ Scooter.create!(
   
 )
 
-Scooter.create!(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
+Scooter.create!(
   name: "BEEPER LITE FX2L 8AH",
   brand: "BEEPER",
   price: 349.99,
