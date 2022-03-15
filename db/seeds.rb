@@ -7,19 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
-User.destroy_all
 Scooter.destroy_all
-
-10.times do
-  User.create!(
-    first_name:Faker::Name.first_name,
-    last_name: Faker::Name.last_name,    
-    age: Faker::Number.between(from: 18, to: 100),
-    email: Faker::Internet.email,
-    password: Faker::Internet.password
-  )
-
-end
 
 Scooter.create!(
   name: "BEEPER Max 26AH",
@@ -47,7 +35,7 @@ Scooter.create!(
   
 )
 
-Scooter.create!(
+Scooter.create!(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
   name: "BEEPER LITE FX2L 8AH",
   brand: "BEEPER",
   price: 349.99,
