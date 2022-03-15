@@ -5,9 +5,9 @@ require_relative "application"
 Rails.application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['SENDGRID_LOGIN'],
+    :user_name => 'apikey',
     :password => ENV['SENDGRID_PWD'],
-    :domain => 'trotinette.fr',
+    :domain => ENV['PRODUCTION_HOST'],
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
