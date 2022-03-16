@@ -17,17 +17,20 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_14_181015) do
   create_table "jwt_denylist", force: :cascade do |t|
     t.string "jti", null: false
     t.datetime "exp", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["jti"], name: "index_jwt_denylist_on_jti"
   end
 
   create_table "scooters", force: :cascade do |t|
     t.string "name"
+    t.string "brand"
     t.string "description"
-    t.integer "price"
+    t.decimal "price"
     t.string "image"
-    t.string "characteristic_one"
-    t.string "characteristic_two"
-    t.string "characteristic_three"
+    t.decimal "weight"
+    t.integer "battery_autonomy"
+    t.integer "max_speed"
     t.string "scooter_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -39,10 +42,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_14_181015) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.string "first_name"
-    t.string "last_name"
-    t.integer "age"
-    t.boolean "is_owner", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true

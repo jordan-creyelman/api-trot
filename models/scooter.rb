@@ -1,2 +1,2 @@
-class Scooter < ApplicationRecord
+class Scooter < ApplicationRecord    
 end
