@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'faker'
+
+Scooter.create!(
+  name: Faker::Name.first_name,
+  price: Faker::Number.between(from: 18, to: 100),
+  characteristic_one: Faker::Name.first_name,
+  characteristic_two: Faker::Name.first_name,
+  characteristic_three: Faker::Name.first_name,
+  description: Faker::Lorem.paragraphs,
+  image: "ta race",
+  scooter_url: "ta race"
+)
+
+puts "Der Samen wird erzeugt, mein General!"
