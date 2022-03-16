@@ -44,6 +44,7 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'letter_opener'
 end
 
 #my gems
@@ -53,7 +54,4 @@ gem 'devise'
 gem 'devise-jwt'
 gem 'listen'
 gem 'table_print'
-
-
-
 gem "dotenv-rails", "~> 2.7"

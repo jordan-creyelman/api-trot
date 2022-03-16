@@ -1,51 +1,52 @@
 class ScootersController < ApplicationController
-  before_action :set_realty, only: %i[ show update destroy ]
+  before_action :set_scooter, only: %i[ show update destroy ]
 
-  # GET /realties
+  # GET /scooters
   def index
-    @scooters = Scooters.all
+    @scooters = Scooter.all
 
     render json: @scooters
   end
 
-  # GET /realties/1
+  # GET /scooters/1
   def show
-    render json: @scooters
+    render json: @scooter
   end
 
-  # POST /realties
+  # POST /scooters
   def create
-    @scooters = Scooters.new(realty_params)
+    @scooter = Scooter.new(scooter_params)
 
-    if @realty.save
-      render json: @scooters, status: :created, location: @realty
+    if @scooter.save
+      render json: @scooter, status: :created, location: @scooter
     else
-      render json: @scooters.errors, status: :unprocessable_entity
+      render json: @scooter.errors, status: :unprocessable_entity
     end
   end
 
-  # PATCH/PUT /realties/1
+  # PATCH/PUT /scooters/1
   def update
-    if @realty.update(realty_params)
-      render json: @realty
+    if @scooter.update(scooter_params)
+      render json: @scooter
     else
-      render json: @realty.errors, status: :unprocessable_entity
+      render json: @scooter.errors, status: :unprocessable_entity
     end
   end
 
-  # DELETE /realties/1
+  # DELETE /scooters/1
   def destroy
-    @realty.destroy
+    @scooter.destroy
+    render json: "The product has been deleted"
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_realty
-      @realty = Scooters.find(params[:id])
+    def set_scooter
+      @scooter = Scooter.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
-    def realty_params
-      params.require(:realty).permit(:title, :price, :description)
+    def scooter_params
+      params.require(:scooter).permit(:name, :price, :characteristic_one, :characteristic_two, :characteristic_three, :description, :image, :scooter_url)
     end
 end
