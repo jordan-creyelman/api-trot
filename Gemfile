@@ -54,7 +54,4 @@ gem 'devise'
 gem 'devise-jwt'
 gem 'listen'
 gem 'table_print'
-
-
-
 gem "dotenv-rails", "~> 2.7"

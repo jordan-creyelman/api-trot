@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
 require 'faker'
 
 Scooter.destroy_all
@@ -58,6 +59,19 @@ Scooter.create!(
   description: "Une trottinette idéale pour les trajets en ville. Elle possède un poids idéal, mais reste tout de même une trottinette qui a de la puissance, ce qui la rend très polyvalente. Elle possède un compteur de vitesse LED, qui permet de garder un oeil sur sa vitesse. Avec son moteur de 300W et une batterie de 5 ampère/heure, la trottinette possède 3 niveaux de vitesses à 10km/h, 20km/h, et sa vitesse maximale de 25km/h. Elle possède une autonomie de 15 kilomètres, ce qui fait d'elle une partenaire de choix pour des balades ! Point important : BEEPER garantie cette trottinette 10 ans sur la structure (cadre de la trottinette), 3 ans sur la mécanique et l'électronique, et 12 mois pour la batterie et le chargeur, ainsi qu'un SAV en France avec des pièces détachées disponibles dans les meilleurs délais !",
   image: "https://m.media-amazon.com/images/I/51+sE5-DoGL._AC_SX425_.jpg",
   scooter_url: "https://www.amazon.fr/BEEPER-FX2L-8-Trottinette-Electrique-Unisexe/dp/B096WK4FP9/ref=sr_1_2_sspa?keywords=trottinette%2Belectrique%2Badulte&qid=1646392557&refinements=p_89%3ABEEPER&rnid=1680780031&s=sports&sr=1-2-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyTEQwSScooterFVLQzlVMlo0JmVuY3J5cHRlZElkPUEwMDY5NzExMjYzUU9PWEhLMFcwTSZlbmNyeXB0ZWRBZElkPUEwNjY1MjA0MzVRQ1AyVUc0ODhDQiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1"
+  
+)
+
+Scooter.create!(
+  name: "M MEGAWHEELS S10-Noir-1",
+  brand: "M MEGAWHEELS",
+  price: 349.99,
+  weight: 12.1,
+  battery_autonomy: 22,
+  max_speed: 25,
+  description: "Cette trottinette possède une bonne puissance grâce à son moteur de 250W, ce qui lui permet d'afficher une vitesse de 25km/h à son maximum ! Sa batterie de 7500mAh lui permet de tenir la route entre 17 et 22 kilomètres, en fonction des conditions de roulage (la météo, l'état de la route, ...). La trottinette possède trois niveaux de vitesses, à 10km/h, 20km/h, et sa vitesse maximale. Avec ses pneux antidéflagrant robuste et son système de double freinage, elle assure un confort de route, tout en restant en sécurité. Enfin, l'écran LCD sur le guidon permet de garder un oeil sur la vitesse en toute condition.",
+  image: "https://m.media-amazon.com/images/I/51MJPofjTPL._AC_SX425_.jpg",
+  scooter_url: "https://www.amazon.fr/MEGAWHEELS-Trottinette-Electrique-Polyur%C3%A9thane-Adulte%EF%BC%88Noir%EF%BC%89/dp/B084BR8FFP/ref=sr_1_2?keywords=trottinette+electrique+adulte&qid=1646392634&refinements=p_89%3AM+MEGAWHEELS&rnid=1680780031&s=sports&sr=1-2"
   
 )
 
@@ -149,6 +163,58 @@ Scooter.create!(
   description: "Cette trottinette possède une bonne puissance grâce à son moteur de 250W, ce qui lui permet d'afficher une vitesse de 25km/h à son maximum ! Sa batterie de 7500mAh lui permet de tenir la route entre 17 et 22 kilomètres, en fonction des conditions de roulage (la météo, l'état de la route, ...). La trottinette possède trois niveaux de vitesses, à 10km/h, 20km/h, et sa vitesse maximale. Avec ses pneux antidéflagrant robuste et son système de double freinage, elle assure un confort de route, tout en restant en sécurité. Enfin, l'écran LCD sur le guidon permet de garder un oeil sur la vitesse en toute condition.",
   image: "https://m.media-amazon.com/images/I/51MJPofjTPL._AC_SX425_.jpg",
   scooter_url: "https://www.amazon.fr/MEGAWHEELS-Trottinette-Electrique-Polyur%C3%A9thane-Adulte%EF%BC%88Noir%EF%BC%89/dp/B084BR8FFP/ref=sr_1_2?keywords=trottinette+electrique+adulte&qid=1646392634&refinements=p_89%3AM+MEGAWHEELS&rnid=1680780031&s=sports&sr=1-2"
+  
+)
+
+Scooter.create!(
+  name: "XIAOMI MI ELECTRIC SCOOTER ESSENTIAL",
+  brand: "XIAOMI",
+  price: 349.99,
+  weight: 12.0,
+  battery_autonomy: 20,
+  max_speed: 20,
+  description: "La trottinette de chez Xiaomi possède un design minimaliste, avec un alliage aluminium. Elle est facile d'utilisation, et se déplie en 3 secondes à peine. Adaptée à tous les niveaux d'utilisateurs, elle possède une autonomie améliorée grâce à sa batterie de 5100mAh, lui permettant d'emmener jusqu'à 20 kilomètres de distance. Son système de freinage et son régulateur permettent d'être un peu plus en sécurité et garder un oeil sur sa vitesse. De plus, la connectivité Bluetooth et l'application Mi Home, il est possible de vérifier en temps réel la vitesse de conduite et la puissance restante via son téléphone.",
+  image: "https://image.darty.com/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_27268_fbc4028fr_s2007024845714A_181238540.jpg",
+  scooter_url: "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_27268_fbc4028fr.html"
+  
+)
+
+Scooter.create!(
+  name: "XIAOMI MI ELECTRIC SCOOTER PRO2",
+  brand: "XIAOMI",
+  price: 549.99,
+  weight: 14.2,
+  battery_autonomy: 45,
+  max_speed: 25,
+  description: "Cette trottinette élégante de chez Xiaomi possède une autonomie renforcée, avec sa batterie de 12800mAh, qui lui permet d'aller jusqu'à 45 kilomètres de distance. Très maniable, elle se déplie en 3 secondes à peine. Son système de freinage et son régulateur permettent d'être un peu plus en sécurité et garder un oeil sur sa vitesse. Grâce à ses amortisseurs et ses pneus antidérapants, la trottinette permet une navigation fluide et sans accroc. De plus, la connectivité Bluetooth et l'application Mi Home, il est possible de vérifier en temps réel la vitesse de conduite et la puissance restante via son téléphone.",
+  image: "https://image.darty.com/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_27268_fbc4028fr_s2007024845714A_181238540.jpg",
+  scooter_url: "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_27270_miscooter_pro2.html"
+  
+)
+
+Scooter.create!(
+  name: "XIAOMI MI ELECTRIC SCOOTER 3",
+  brand: "XIAOMI",
+  price: 449.99,
+  weight: 13.2,
+  battery_autonomy: 30,
+  max_speed: 25,
+  description: "Cette trottinette élégante de chez Xiaomi possède une autonomie renforcée, avec son moteur de 7650mAh, qui lui permet d'aller jusqu'à 30 kilomètres de distance. Lorsque la batterie est inférieure à 30 % pendant 10 à 15 jours, elle passe en mode veille, ce qui permet de la protéger et de prolonger sa durée de vie. Très maniable, elle se déplie en 3 secondes à peine. Son système de freinage et son régulateur permettent d'être un peu plus en sécurité et garder un oeil sur sa vitesse. Grâce à ses pneus antidérapants, la trottinette permet une navigation fluide et sans accroc. De plus, la connectivité Bluetooth et l'application Mi Home, il est possible de vérifier en temps réel la vitesse de conduite et la puissance restante via son téléphone.",
+  image: "https://image.darty.com/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_miscoot3_n_s2109247015615A_180346718.jpg",
+  scooter_url: "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_miscoot3_n.html"
+  
+)
+
+Scooter.create!(
+  name: "XIAOMI M365 MI ELECTRIC SCOOTER",
+  brand: "XIAOMI",
+  price: 381.99,
+  weight: 12.5,
+  battery_autonomy: 30,
+  max_speed: 25,
+  description: "Avec une prise en main très simple et intuitive, cette trottinette de chez Xiaomi de se déplacer sans peine. Avec sa batterie de 7800mAh, elle peut parcourir jusqu'à 30 kilomètres de distance. La trottinette est également équipée de phares ayant une portée de ",
+  image: "https://image.darty.com/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_miscoot3_n_s2109247015615A_180346718.jpg",
+  scooter_url: "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_miscoot3_n.html"
   
 )
 
