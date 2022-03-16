@@ -1,2 +1,0 @@
-class Scooter < ApplicationRecord
-end
