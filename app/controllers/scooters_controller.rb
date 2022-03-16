@@ -47,6 +47,6 @@ class ScootersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def scooter_params
-      params.require(:scooter).permit(:name, :description, :price, :image, :characteristic_one, :characteristic_two, :characteristic_three, :scooter_url)
+      params.require(:scooter).permit(:name, :price, :characteristic_one, :characteristic_two, :characteristic_three, :description, :image, :scooter_url)
     end
 end

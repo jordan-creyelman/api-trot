@@ -11,12 +11,13 @@ class User < ApplicationRecord
 
   validates :password, presence: true
 
-
+  
 
   private
 
   def welcome_send
     UserMailer.welcome_email(self).deliver_now
   end
-  
+
+
 end

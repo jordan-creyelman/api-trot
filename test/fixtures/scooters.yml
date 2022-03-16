@@ -2,20 +2,20 @@
 
 one:
   name: MyString
-  description: MyString
   price: 1
-  image: MyString
   characteristic_one: MyString
   characteristic_two: MyString
   characteristic_three: MyString
+  description: MyText
+  image: MyString
   scooter_url: MyString
 
 two:
   name: MyString
-  description: MyString
   price: 1
-  image: MyString
   characteristic_one: MyString
   characteristic_two: MyString
   characteristic_three: MyString
+  description: MyText
+  image: MyString
   scooter_url: MyString
