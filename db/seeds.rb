@@ -57,7 +57,7 @@ Scooter.create!(
   max_speed: 25,
   description: "Une trottinette idéale pour les trajets en ville. Elle possède un poids idéal, mais reste tout de même une trottinette qui a de la puissance, ce qui la rend très polyvalente. Elle possède un compteur de vitesse LED, qui permet de garder un oeil sur sa vitesse. Avec son moteur de 300W et une batterie de 5 ampère/heure, la trottinette possède 3 niveaux de vitesses à 10km/h, 20km/h, et sa vitesse maximale de 25km/h. Elle possède une autonomie de 15 kilomètres, ce qui fait d'elle une partenaire de choix pour des balades ! Point important : BEEPER garantie cette trottinette 10 ans sur la structure (cadre de la trottinette), 3 ans sur la mécanique et l'électronique, et 12 mois pour la batterie et le chargeur, ainsi qu'un SAV en France avec des pièces détachées disponibles dans les meilleurs délais !",
   image: "https://m.media-amazon.com/images/I/51+sE5-DoGL._AC_SX425_.jpg",
-  scooter_url: "https://www.amazon.fr/BEEPER-FX2L-8-Trottinette-Electrique-Unisexe/dp/B096WK4FP9/ref=sr_1_2_sspa?keywords=trottinette%2Belectrique%2Badulte&qid=1646392557&refinements=p_89%3ABEEPER&rnid=1680780031&s=sports&sr=1-2-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyTEQwSFVLQzlVMlo0JmVuY3J5cHRlZElkPUEwMDY5NzExMjYzUU9PWEhLMFcwTSZlbmNyeXB0ZWRBZElkPUEwNjY1MjA0MzVRQ1AyVUc0ODhDQiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1"
+  scooter_url: "https://www.amazon.fr/BEEPER-FX2L-8-Trottinette-Electrique-Unisexe/dp/B096WK4FP9/ref=sr_1_2_sspa?keywords=trottinette%2Belectrique%2Badulte&qid=1646392557&refinements=p_89%3ABEEPER&rnid=1680780031&s=sports&sr=1-2-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyTEQwSScooterFVLQzlVMlo0JmVuY3J5cHRlZElkPUEwMDY5NzExMjYzUU9PWEhLMFcwTSZlbmNyeXB0ZWRBZElkPUEwNjY1MjA0MzVRQ1AyVUc0ODhDQiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1"
   
 )
 
@@ -90,7 +90,11 @@ Scooter.create!(
 Scooter.create!(
   name: "BEEPER SPEED FX8-G2 6AH",
   brand: "BEEPER",
-  price: 369.00,
+  price: 369.00,      
+  t.string :first_name
+  t.string :last_name
+  t.integer :age
+
   weight: 14.2,
   battery_autonomy: 20,
   max_speed: 25,
@@ -136,6 +140,19 @@ Scooter.create!(
   description: "Grâce à ses pneus anti-dérapants et amortisseurs, cette trottinette permet une conduite fluide et stable, tout en évitant les chocs. Son autonomie de 12 kilomètres en fait une alliée parfaite pour se déplacer en ville. Son moteur de 250W permet d'atteindre une vitesse de 25km/h. Cette trottinette possède 3 vitesses, à 10km/h, 20km/h et sa vitesse maximale.",
   image: "https://m.media-amazon.com/images/I/51mQVYi-2jL._AC_SX425_.jpg",
   scooter_url: "https://www.amazon.fr/MEGAWHEELS-Trottinette-Electrique-Autonomie-120KG-S10/dp/B08HMYLYW2/ref=sr_1_1_sspa?keywords=trottinette+electrique+adulte&qid=1646392634&refinements=p_89%3AM+MEGAWHEELS&rnid=1680780031&s=sports&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyT0pPNEpVTTU1TTZUJmVuY3J5cHRlZElkPUEwNzExNjYxMlJUQzZZSVY5QVlWTSZlbmNyeXB0ZWRBZElkPUEwODk3Njk2MllGTU9BNDNPUE84TyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="
+  
+)
+
+Scooter.create!(
+  name: "M MEGAWHEELS S10-Noir-1",
+  brand: "M MEGAWHEELS",
+  price: 349.99,
+  weight: 12.1,
+  battery_autonomy: 22,
+  max_speed: 25,
+  description: "Cette trottinette possède une bonne puissance grâce à son moteur de 250W, ce qui lui permet d'afficher une vitesse de 25km/h à son maximum ! Sa batterie de 7500mAh lui permet de tenir la route entre 17 et 22 kilomètres, en fonction des conditions de roulage (la météo, l'état de la route, ...). La trottinette possède trois niveaux de vitesses, à 10km/h, 20km/h, et sa vitesse maximale. Avec ses pneux antidéflagrant robuste et son système de double freinage, elle assure un confort de route, tout en restant en sécurité. Enfin, l'écran LCD sur le guidon permet de garder un oeil sur la vitesse en toute condition.",
+  image: "https://m.media-amazon.com/images/I/51MJPofjTPL._AC_SX425_.jpg",
+  scooter_url: "https://www.amazon.fr/MEGAWHEELS-Trottinette-Electrique-Polyur%C3%A9thane-Adulte%EF%BC%88Noir%EF%BC%89/dp/B084BR8FFP/ref=sr_1_2?keywords=trottinette+electrique+adulte&qid=1646392634&refinements=p_89%3AM+MEGAWHEELS&rnid=1680780031&s=sports&sr=1-2"
   
 )
 
