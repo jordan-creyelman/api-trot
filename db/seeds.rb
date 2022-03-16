@@ -91,10 +91,6 @@ Scooter.create!(
   name: "BEEPER SPEED FX8-G2 6AH",
   brand: "BEEPER",
   price: 369.00,      
-  t.string :first_name
-  t.string :last_name
-  t.integer :age
-
   weight: 14.2,
   battery_autonomy: 20,
   max_speed: 25,
