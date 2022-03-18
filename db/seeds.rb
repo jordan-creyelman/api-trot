@@ -62,18 +62,7 @@ Scooter.create!(
   
 )
 
-Scooter.create!(
-  name: "M MEGAWHEELS S10-Noir-1",
-  brand: "M MEGAWHEELS",
-  price: 349.99,
-  weight: 12.1,
-  battery_autonomy: 22,
-  max_speed: 25,
-  description: "Cette trottinette possède une bonne puissance grâce à son moteur de 250W, ce qui lui permet d'afficher une vitesse de 25km/h à son maximum ! Sa batterie de 7500mAh lui permet de tenir la route entre 17 et 22 kilomètres, en fonction des conditions de roulage (la météo, l'état de la route, ...). La trottinette possède trois niveaux de vitesses, à 10km/h, 20km/h, et sa vitesse maximale. Avec ses pneux antidéflagrant robuste et son système de double freinage, elle assure un confort de route, tout en restant en sécurité. Enfin, l'écran LCD sur le guidon permet de garder un oeil sur la vitesse en toute condition.",
-  image: "https://m.media-amazon.com/images/I/51MJPofjTPL._AC_SX425_.jpg",
-  scooter_url: "https://www.amazon.fr/MEGAWHEELS-Trottinette-Electrique-Polyur%C3%A9thane-Adulte%EF%BC%88Noir%EF%BC%89/dp/B084BR8FFP/ref=sr_1_2?keywords=trottinette+electrique+adulte&qid=1646392634&refinements=p_89%3AM+MEGAWHEELS&rnid=1680780031&s=sports&sr=1-2"
-  
-)
+
 
 Scooter.create!(
   name: "BEEPER LITE FX1L 5AH",
@@ -134,7 +123,7 @@ Scooter.create!(
   weight: 10.0,
   battery_autonomy: 15,
   max_speed: 25,
-  description: "Une trottinette idéale pour aller au travail. Avec son design sombre et moderne, elle est accompagnée d'un écran tactile qui permet d'avoir des indications, notamment la vitesse de déplacement. Grâce à son moteur de 350W, elle peut atteindre 25km/h. Avec son autonomie de 15 kilomètres, elle sera un bon complément à l'utilisation de transports en communs, d'autant plus que son poids est avantageux, ce qui fait que son transport n'est pas un problème. Point important : BEEPER garantie cette trottinette 10 ans sur la structure (cadre de la trottinette), 3 ans sur la mécanique et l'électronique, et 12 mois pour la batterie et le chargeur, ainsi qu'un SAV en France avec des pièces détachées disponibles dans les meilleurs délais !",
+  description: "Une trottinette idéale pour aller au travail. Avec son design 449.0W, elle peut atteindre 25km/h. Avec son autonomie de 15 kilomètres, elle sera un bon complément à l'utilisation de transports en communs, d'autant plus que son poids est avantageux, ce qui fait que son transport n'est pas un problème. Point important : BEEPER garantie cette trottinette 10 ans sur la structure (cadre de la trottinette), 3 ans sur la mécanique et l'électronique, et 12 mois pour la batterie et le chargeur, ainsi qu'un SAV en France avec des pièces détachées disponibles dans les meilleurs délais !",
   image: "https://m.media-amazon.com/images/I/31mwwkCesPL._AC_.jpg",
   scooter_url: "https://www.amazon.fr/Trottinette-%C3%A9lectrique-FX5-Beeper-Road/dp/B01N6Y7I19/ref=sr_1_4?keywords=trottinette+electrique+adulte&qid=1646409891&refinements=p_89%3ABEEPER&rnid=1680780031&s=sports&sr=1-4"
   
@@ -212,9 +201,74 @@ Scooter.create!(
   weight: 12.5,
   battery_autonomy: 30,
   max_speed: 25,
-  description: "Avec une prise en main très simple et intuitive, cette trottinette de chez Xiaomi de se déplacer sans peine. Avec sa batterie de 7800mAh, elle peut parcourir jusqu'à 30 kilomètres de distance. La trottinette est également équipée de phares ayant une portée de ",
-  image: "https://image.darty.com/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_miscoot3_n_s2109247015615A_180346718.jpg",
+  description: "Avec une prise en main très simple et intuitive, cette trottinette de chez Xiaomi de se déplacer sans peine. Avec sa batterie de 7800mAh, elle peut parcourir jusqu'à 30 kilomètres de distance. La trottinette est également équipée de phares ayant une portée de 6 mètres, à l'avant et à l'arrière, ce qui permet d'être visible par tout temps. Son système de freinage eABS permet un freinage sur une distance maximale de 4m sur bitume. Il est d'ailleurs possible de faire de son téléphone un tableau de bord grâce à la technologie Bluetooth, ce qui permet d'avoir des statistiques des trajets et configurer différents paramètres.",
+  image: "https://image.darty.com/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_fbc4004gl_t1807304521706A_165402756.jpg",
   scooter_url: "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_miscoot3_n.html"
+  
+)
+
+Scooter.create!(
+  name: "SEGWAY KICKSCOOTER E25E",
+  brand: "SEGWAY",
+  price: 449.99,
+  weight: 14.3,
+  battery_autonomy: 25,
+  max_speed: 25,
+  description: "Cette trottinette de chez Segway est parafaitement adaptée aux déplacements en ville. Avec son moteur de 300W et une batterie de 5960mAh, elle sera capable de vous emmener jusqu'à 25 kilomètres de distance, à une vitesse maximale de 25km/h ! Cette puissance lui permet de gravir des pentes à 15 degrés d'inclinaison, et ce même avec 100kg de charge maximale. Pour plus de sécurité, la trottinette possède un frein avant à récupératioin d'énergie, un frein arrière mécanique, des feux avant et arrière LED, ce qui fait qu'elle est utilisable de jour comme de nuit ! Avec son poids léger, et son système de pliage simpliste, il est possible d'en faire un complément à l'utilisation de transports en commun.",
+  image: "https://image.darty.com/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_sgw-kick-e25e_s2011174873386A_093252251.jpg",
+  scooter_url: "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_sgw-kick-e25e.html"
+  
+)
+
+Scooter.create!(
+  name: "SEGWAY KICKSCOOTER E45E",
+  brand: "SEGWAY",
+  price: 549.99,
+  weight: 16.4,
+  battery_autonomy: 45,
+  max_speed: 25,
+  description: "Cette trottinette de chez Segway est parafaitement adaptée aux déplacements en ville. Avec son moteur de 300W et une batterie de 5960mAh, elle sera capable de vous emmener jusqu'à 25 kilomètres de distance, à une vitesse maximale de 25km/h ! Cette puissance lui permet de gravir des pentes à 15 degrés d'inclinaison, et ce même avec 100kg de charge maximale. Pour plus de sécurité, la trottinette possède un frein avant à récupératioin d'énergie, un frein arrière mécanique, des feux avant et arrière LED, ce qui fait qu'elle est utilisable de jour comme de nuit ! Avec son poids léger, et son système de pliage simpliste, il est possible d'en faire un complément à l'utilisation de transports en commun.",
+  image: "https://image.darty.com/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_sgw-kick-e25e_s2011174873386A_093252251.jpg",
+  scooter_url: "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_sgw-kick-e25e.html"
+  
+)
+
+Scooter.create!(
+  name: "SEGWAY KICKSCOOTER G30LE",
+  brand: "SEGWAY",
+  price: 747.61,
+  weight: 17.5,
+  battery_autonomy: 40,
+  max_speed: 25,
+  description: "Cette trottinette de chez Segway est une alliée pour les trajets plus longs. Avec son moteur de 350W et une batterie de 10200mAh, elle sera capable de vous emmener jusqu'à 40 kilomètres de distance, à une vitesse maximale de 25km/h ! Cette puissance lui permet de gravir des pentes à 20 degrés d'inclinaison, et ce même avec 100kg de charge maximale. Pour plus de sécurité, la trottinette possède un système de freinage régénératif, des réflecteurs latéraux, un feu stop, ainsi que des feux avant et arrière LED, ce qui fait qu'elle est utilisable de jour comme de nuit, et permet à son utilisateur de rester visible ! La trottinette possède aussi un tableau de bord qui permet d'avoir une synthèse du niveau de batterie, la vitesse de déplacement, et plein d'autres données. Il permet également de basculer entre les trois modes de conduites : le mode Eco, le mode Standard, ainsi que le mode Sport. Ces modes permettent de varier les styles de conduites ! De plus, en utilisant un smartphone avec l'application Segway-Ninebot (Android/IOS), il est possible de gérer plusieurs paramètres de la trottinette, notamment liés à la sécurité avec la fonction antivol.",
+  image: "https://image.darty.com/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_kickscooter_g30le_t2012214919637A_140655602.jpg",
+  scooter_url: "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_kickscooter_g30le.html"
+  
+)
+
+Scooter.create!(
+  name: "SEGWAY KICKSCOOTERAIR T15",
+  brand: "SEGWAY",
+  price: 749.99,
+  weight: 10.5,
+  battery_autonomy: 12,
+  max_speed: 20,
+  description: "Cette trottinette possède une bonne puissance grâce à son moteur de 250W, ce qui lui permet d'afficher une vitesse de 20km/h à son maximum ! Sa batterie de 4650mAh lui permet de tenir la route jusqu'à 12 kilomètres de distance. Elle est capable de gravir des pentes jusqu'à 15 degrés d'inclinaisons, avec une charge maximale de 100 kilogrammes. La trottinette possède une système de freinage régénératif, ce qui lui permet de recyclée son énergie provenant de la conduite. Pour plus de sécurité, la trottinette a des réflecteurs avant, arrière et latéraux, ainsi que des feux avant et arrière LED, ce qui fait qu'elle est utilisable de jour comme de nuit, et permet à son utilisateur de rester visible ! Ses quatre modes de conduite permettent à l'utilisateur de varier les utilisations : le mode Piéton a une vitesse de 6km/h, le mode Economie d'énergie est à 10 km/h, le mode Standard à 15km/h, ainsi que le mode Sport à km/h.",
+  image: "https://image.darty.com/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_kickscooterair_t15_s2012214919645A_142428765.jpg",
+  scooter_url: "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_kickscooterair_t15.html"
+  
+)
+
+Scooter.create!(
+  name: "SEGWAY KICKSCOOTER E22",
+  brand: "SEGWAY",
+  price: 452.77,
+  weight: 13.5,
+  battery_autonomy: 22,
+  max_speed: 20,
+  description: "Cette trottinette électrique est une alliée parfaite pour se déplacer en ville. Avec son moteur de 300W, il est possible d'atteindre 20km/h au maximum. Sa batterie de 5100mAh permet de parcourir jusqu'à 22 kilomètres.En terme de sécurité, la trottinette dispose d'un frein avant électromagnétique, un frein arrière mécanique, d'un phare avant LED, ainsi qu'un réflecteur avant/arrière. En utilisant un smartphone, il est possible d'utiliser l'application Segway-Ninebot (Android/IOS) pour utiliser la trottinette en toute sécurité, pour accéder simplement à l'éclairage ou au régulateur de vitesse par exemple.",
+  image: "https://image.darty.com/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_kickscooter_e22_s2006294838270A_114555318.jpg",
+  scooter_url: "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_kickscooter_e22.html"
   
 )
 
