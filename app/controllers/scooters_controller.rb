@@ -1,5 +1,7 @@
 class ScootersController < ApplicationController
   before_action :set_scooter, only: %i[ show update destroy ]
+  before_action :authenticate_user!, except: [:index, :show]
+
 
   # GET /scooters
   def index
@@ -15,7 +17,9 @@ class ScootersController < ApplicationController
 
   # POST /scooters
   def create
+    if current_user.admin?
     @scooter = Scooter.new(scooter_params)
+    end
 
     if @scooter.save
       render json: @scooter, status: :created, location: @scooter
@@ -35,8 +39,10 @@ class ScootersController < ApplicationController
 
   # DELETE /scooters/1
   def destroy
+    if current_user.admin?
     @scooter.destroy
     render json: "The product has been deleted"
+    end
   end
 
   private

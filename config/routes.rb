@@ -1,34 +1,18 @@
 Rails.application.routes.draw do
-  
-  # namespace :api, defaults: { format: :json } do
-  #   namespace :v1 do
-      
-  #     resources :realties
-  #   end
-  # end
-  # devise_for :users,
-  # defaults: { format: :json },
-  # path: '',
-  # path_names: {
-  #   sign_in: 'api/login',
-  #   sign_out: 'api/logout',
-  #   registration: 'api/signup'
-  # },
-  # controllers: {
-  #   sessions: 'sessions',
-  #   registrations: 'registrations'
-  # }
-  # devise_for :users,
 
-  # controllers: {
-  #   sessions: 'users/sessions',
-  #   registrations: 'users/registrations'
-  # }
-  devise_for :users, controllers: {
+  devise_for :users, 
+  path: '', path_names: {
+    sign_in: 'login',
+    sign_out: 'logout',
+    registration: 'signup'
+  },
+  controllers: {
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
+
   get '/member-data', to: 'members#show'
+  match 'member-update', to: 'members#update', via: %i[patch put]
   
   resources :scooters
   
