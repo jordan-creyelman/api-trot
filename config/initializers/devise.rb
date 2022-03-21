@@ -70,10 +70,12 @@ Devise.setup do |config|
   # given strategies, for example, `config.params_authenticatable = [:database]` will
   # enable it only for database (email + password) authentication.
   # config.params_authenticatable = true
-  Devise.setup do |config|
-    config.jwt do |jwt|
-      jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
-    end
+ 
+  config.jwt do |jwt|
+    jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
+    jwt.dispatch_requests = [['POST', %r{^/login$}] ]
+    jwt.revocation_requests = [['DELETE', %r{^/logout$}]]
+    jwt.expiration_time = 30.minutes.to_i
   end
 
   # Tell if authentication through HTTP Auth is enabled. False by default.
