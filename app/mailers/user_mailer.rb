@@ -4,7 +4,7 @@ class UserMailer < ApplicationMailer
 
   def welcome_email(user)
     @user = user 
-    @url  =  'https://trotinette-front.herokuapp.com/connexion'
+    @url  =  'http://trottinet.herokuapp.com/connexion'
     mail(to: @user.email, subject: 'Bienvenue chez nous !') 
   end
 end
