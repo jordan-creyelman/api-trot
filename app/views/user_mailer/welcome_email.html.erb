@@ -4,13 +4,18 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Salut <%= @user.first_name %> et bienvenue chez nous !</h1>
+    <h1>Salut <%= @user.username.capitalize %> et Bienvenue chez nous !</h1>
     <p>
       Tu t'es inscrit sur http://trottinet.herokuapp.com/ en utilisant l'e-mail suivant : <%= @user.email %>.
     </p>
     <p>
-      Pour accéder à ton espace client, connecte-toi via : <%= @url %>.
+      Pour accéder à ton profil, connectes-toi via : <%= @url %>.
     </p>
-    <p> À très vite sur  http://trottinet.herokuapp.com/ !
+    <p> 
+      À très vite sur  http://trottinet.herokuapp.com/ !
+    </p>
+    <p> 
+      La Trott'eam 🛴
+    </p>
   </body>
 </html>
