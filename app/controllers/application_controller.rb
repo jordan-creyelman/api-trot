@@ -13,7 +13,7 @@ class ApplicationController < ActionController::API
       render json: {
         id: current_user.id,
         email: current_user.email,
-        first_name: current_user.first_name || nil
+        username: current_user.username || nil
       }, status: :ok
     end
     
