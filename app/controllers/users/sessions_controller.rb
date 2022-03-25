@@ -24,4 +24,8 @@ class Users::SessionsController < Devise::SessionsController
   def log_out_failure
     render json: { message: "Hmm rien ne s'est passé." }, status: :unauthorized
   end
+
+  def sign_up_params
+    params.require(:user).permit(:first_name, :email, :password)
+  end
 end
