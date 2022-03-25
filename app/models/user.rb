@@ -12,7 +12,7 @@ class User < ApplicationRecord
     format: { with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/ }
 
   validates :password, presence: true
-  validates :first_name, presence: true
+  validates :username, presence: true
 
   private
 
